@@ -10,6 +10,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>hello-world</module>
+        <module>core</module>
     </modules>
     <dependencies>
 
@@ -104,4 +105,13 @@
         </dependency>
     </dependencies>
 
+    <profiles>
+        <profile>
+            <id>downloadSources</id>
+            <properties>
+                <downloadSources>true</downloadSources>
+                <downloadJavadocs>true</downloadJavadocs>
+            </properties>
+        </profile>
+    </profiles>
 </project>
